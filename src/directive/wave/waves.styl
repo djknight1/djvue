@@ -1,0 +1,22 @@
+.ripple
+    position: absolute
+    border-radius: 100%
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none // user-select控制不能让用户选中文本
+    -webkit-transform: scale(0)
+    -ms-transform: scale(0)
+    transform: scale(0)
+    opacity: 1
+    &.active  //选中状态
+      // 解决浏览器适配问题 opacity和 transform的时间不同 这样写更好看
+      -webkit-transition: opacity 1.2s ease-out, -webkit-transform 0.6s ease-out;
+      transition: opacity 1.2s ease-out, -webkit-transform 0.6s ease-out;
+      transition: opacity 1.2s ease-out, transform 0.6s ease-out;
+      transition: opacity 1.2s ease-out, transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+      -webkit-transform: scale(2)
+      -ms-transform: scale(2)
+      transform: scale(2)
+      opacity: 0
+

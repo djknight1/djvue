@@ -1,14 +1,24 @@
 {
-  "name": "dj-markdown",
-  "version": "0.1.0",
-  "private": true,
+  "name": "djvue",
+  "version": "0.1.4",
+  "private": false,
+  "main": "src/main.js",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djknight1/djvue"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "register-service-worker": "^1.0.0",
+    "simplemde": "^1.11.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
